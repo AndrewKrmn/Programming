@@ -1,1 +1,2 @@
-# Programing
+# Programming
+Repository for labaratory works
