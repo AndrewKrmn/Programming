@@ -16,7 +16,7 @@ int main() //<--- Головна функція
          << "Третя відстань :" << third << "\n"
          << "Четверта відстань :" << fouth << endl;
 
-    total = math(first, second, third, fouth); //<--- запис функції в змінну
+    total = math(first * 0.25, second * 0.25, third * 0.25, fouth * 0.25); //<--- запис функції в змінну
 
     cout << "Повний шлях: " << total << endl; //<--- вивід змінної
 
