@@ -7,7 +7,7 @@ void task()
     int age;
     while (true)
     {
-        cout << "Введи свій вік\n 00 - вихід\n";
+        cout << "Введи свій вік  00 - вихід\n";
         cin >> age;
         if (age >= 18)
         {
@@ -26,8 +26,34 @@ void task()
         //^--- вихід з циклу
     }
 }
+//^--- функція 1 задачі
+void second_task()
+{
+    const float x0 = 0, y0 = 0;
+    const float r = 5;
+    float x, y;
+    cout << "Введіть координати точки: ";
+    cin >> x >> y;
+    float dist = sqrt((x - x0) * (x - x0) + (y - y0) * (y - y0));
+    //^--- обчислення точки
+    if (dist == 0)
+    {
+        cout << "Введена точка знаходиться в центрі кола." << endl;
+    }
+    else if (dist <= r)
+    {
+        cout << "Введена точка знаходиться на ободі кола." << endl;
+    }
+    else
+    {
+        cout << "Введена точка знаходиться за межами кола." << endl;
+    }
+}
 
 int main()
 {
+    cout << "=====first task=====" << endl;
     task();
+    cout << "=====second task====" << endl;
+    second_task();
 }
