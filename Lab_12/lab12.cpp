@@ -55,7 +55,7 @@ void Math(int &i, float &a, float &b)
         b *= abs(sin(2 * k - 1.5)) + 3 * abs(sin(4 * k)) + 2.38;
     }
     float z = pow(a, b);
-    cout << "\nЗначення i: " << i << "\nЗначення a: " << a << "\nЗначення b: " << b << "\nЗначення z: " << z << endl;
+    cout << fixed << "\nЗначення i: " << i << "\nЗначення a: " << a << "\nЗначення b: " << b << "\nЗначення z: " << z << endl;
 }
 //^--- функція другої задачи
 int main()
