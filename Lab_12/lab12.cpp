@@ -48,11 +48,11 @@ void Math(int &i, float &a, float &b)
 
     for (int k = i; k <= i + 5; k++)
     {
-        a += abs(sin(2 * k - 1.5)) + 3 * std::abs(sin(4 * k)) + 2.38;
+        a += abs(sin(2 * k - 1.5)) + 3 * abs(sin(4 * k)) + 2.38;
     }
     for (int k = i; k <= i + 8; k++)
     {
-        b *= abs(sin(2 * k - 1.5)) + 3 * std::abs(sin(4 * k)) + 2.38;
+        b *= abs(sin(2 * k - 1.5)) + 3 * abs(sin(4 * k)) + 2.38;
     }
     float z = pow(a, b);
     cout << "\nЗначення i: " << i << "\nЗначення a: " << a << "\nЗначення b: " << b << "\nЗначення z: " << z << endl;
