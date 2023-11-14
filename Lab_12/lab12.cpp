@@ -52,7 +52,7 @@ void Math(int &i, float &a, float &b)
     }
     for (int k = i; k <= i + 8; k++)
     {
-        b *= abs(sin(2 * k - 1.5)) + 3 * abs(sin(4 * k)) + 2.38;
+        b *= abs(cos(pow(k, 2))) * sin(2 * k - 1) + 4.29;
     }
     float z = pow(a, b);
     cout << fixed << "\nЗначення i: " << i << "\nЗначення a: " << a << "\nЗначення b: " << b << "\nЗначення z: " << z << endl;
