@@ -9,7 +9,7 @@ int main()
     vector<int> cash_up;
     for (int i : arr)
     {
-        float yk = 100 * cos(2.1 * 7) * sin(abs(7)) / 0.15 - 5.8 * i;
+        float yk = 100 * cos(2.1 * i) * sin(abs(i)) / 0.15 - 5.8;
         if (yk > 0)
         {
             cout << "Фірма " << i << " року мала прибуток " << yk << endl;
@@ -47,7 +47,7 @@ vector:
     vector<int> vector_cash_up;
     while (vector_i < years.size())
     {
-        float yk = 100 * cos(2.1 * 7) * sin(abs(7)) / 0.15 - 5.8 * years[vector_i];
+        float yk = 100 * cos(2.1 * i) * sin(abs(i)) / 0.15 - 5.8 * years[vector_i];
         if (yk > 0)
         {
             cout << "Фірма " << years[vector_i] << " року мала прибуток " << yk << endl;
