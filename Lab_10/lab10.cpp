@@ -99,7 +99,7 @@ float CrewMoment(unsigned int &team_size)
     }
     else
     {
-        crew = team_size * 286;
+        crew = (PERSON_WT + PERSON_WT) * 143;
     }
 
     return crew;
